@@ -2,7 +2,6 @@ package br.com.exemplo.aula.veiculos;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import br.com.exemplo.aula.daos.FipeDAO;
 import br.com.exemplo.aula.daos.VeiculosDAO;
 import br.com.exemplo.aula.logica.Logica;

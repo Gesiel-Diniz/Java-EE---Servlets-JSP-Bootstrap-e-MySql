@@ -29,7 +29,7 @@ public class FipeDAO {
         	
             Statement statement = connection.createStatement();
             
-            ResultSet rs = statement.executeQuery("SELECT * FROM ano_modelo WHERE modelo = '"+idModelo+"'");
+            ResultSet rs = statement.executeQuery("SELECT * FROM ano_modelo WHERE modelo = '"+idModelo+"' Order by nome ASC");
             
             while (rs.next()) {
             	
@@ -64,7 +64,7 @@ public class FipeDAO {
         	
             Statement statement = connection.createStatement();
             
-            ResultSet rs = statement.executeQuery("SELECT * FROM modelo WHERE marca = "+idMarca);
+            ResultSet rs = statement.executeQuery("SELECT * FROM modelo WHERE marca = "+idMarca+" order by nome ASC");
             
             while (rs.next()) {
             	
@@ -98,7 +98,7 @@ public class FipeDAO {
         	
             Statement statement = connection.createStatement();
             
-            ResultSet rs = statement.executeQuery("select * from marca");
+            ResultSet rs = statement.executeQuery("select * from marca order by nome ASC");
             
             while (rs.next()) {
             	

@@ -2,19 +2,19 @@ package br.com.exemplo.aula.entidades;
 
 public class Veiculos extends AbstractId{
 	
-	private Long idModelo;
-	private Long idAnoModelo;
-	private Long idMarca;
+	private Modelos idModelo;
+	private AnoModelos idAnoModelo;
+	private Marcas idMarca;
 	private String placa;
 	private String anoFabricacao;
 	private String tipo;
 	private String dataCadastro;
 	
 	
-	public Long getIdModelo() {
+	public Modelos getIdModelo() {
 		return idModelo;
 	}
-	public void setIdModelo(Long idModelo) {
+	public void setIdModelo(Modelos idModelo) {
 		this.idModelo = idModelo;
 	}
 	public String getPlaca() {
@@ -41,18 +41,17 @@ public class Veiculos extends AbstractId{
 	public void setDataCadastro(String dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
-	public Long getIdAnoModelo() {
+	public AnoModelos getIdAnoModelo() {
 		return idAnoModelo;
 	}
-	public void setIdAnoModelo(Long idAnoModelo) {
+	public void setIdAnoModelo(AnoModelos idAnoModelo) {
 		this.idAnoModelo = idAnoModelo;
 	}
-	public Long getIdMarca() {
+	public Marcas getIdMarca() {
 		return idMarca;
 	}
-	public void setIdMarca(Long idMarca) {
+	public void setIdMarca(Marcas idMarca) {
 		this.idMarca = idMarca;
 	}
-	
-	
+
 }
